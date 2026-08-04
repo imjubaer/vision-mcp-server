@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-mcp-server"
+version = "0.1.0"
+description = "Production-ready Vision MCP server for Open WebUI and MCP clients"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Jubaer Mahmud"}]
+dependencies = [
+  "fastmcp>=2.0.0",
+  "google-genai>=1.30.0",
+  "python-dotenv>=1.0.1",
+  "Pillow>=10.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[tool.setuptools]
+py-modules = ["server", "config", "provider"]
