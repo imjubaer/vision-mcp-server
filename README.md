@@ -1,1 +1,1 @@
-# vision-mcp-server
+# Vision MCP Server
